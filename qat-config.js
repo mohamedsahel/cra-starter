@@ -45,7 +45,7 @@ export default ${nameCC}Container
 `
 }
 
-const getStyleTemp = (name, nameCC) => {
+const getStyleTemp = () => {
   return `import styled from 'styled-components'
 
 export const Container = styled.div${'`' + '`'}

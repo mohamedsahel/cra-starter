@@ -28,7 +28,9 @@ const generalTheme = {
   }
 }
 
-const getTheme = (mode: 'light' | 'dark') => {
+type GetTheme = (mode: 'light' | 'dark') => void
+
+const getTheme: GetTheme = (mode) => {
   return {
     ...(mode === 'light' ? lightMode : darkMode),
     ...generalTheme
